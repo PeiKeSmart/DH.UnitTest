@@ -24,7 +24,7 @@
     <Authors>$(Company)</Authors>
     <PackageProjectUrl>https://www.haocoding.com/</PackageProjectUrl>
     <PackageIcon>DH.png</PackageIcon>
-    <RepositoryUrl>https://github.com/PeiKeSmart/DH.NCore</RepositoryUrl>
+    <RepositoryUrl>https://github.com/PeiKeSmart/DH.UnitTest</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>湖北登灏科技有限公司;DH组件;DH;$(AssemblyName)</PackageTags>
     <PackageReleaseNotes>优化单元测试的顺序日志输出</PackageReleaseNotes>
