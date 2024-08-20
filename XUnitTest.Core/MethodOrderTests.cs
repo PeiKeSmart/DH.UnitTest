@@ -4,7 +4,7 @@ using Xunit.Abstractions;
 
 namespace XUnitTest;
 
-[TestCaseOrderer("NewLife.UnitTest.DefaultOrderer", "NewLife.UnitTest")]
+[TestCaseOrderer("NewLife.UnitTest.DefaultOrderer", "DH.UnitTest")]
 public class MethodOrderTests
 {
     private readonly ITestOutputHelper _output;

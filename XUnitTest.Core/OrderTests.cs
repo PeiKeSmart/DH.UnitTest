@@ -5,7 +5,7 @@ using Xunit.Abstractions;
 
 namespace XUnitTest;
 
-[TestCaseOrderer("NewLife.UnitTest.PriorityOrderer", "NewLife.UnitTest")]
+[TestCaseOrderer("NewLife.UnitTest.PriorityOrderer", "DH.UnitTest")]
 public class OrderTests
 {
     private readonly ITestOutputHelper _output;
