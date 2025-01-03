@@ -5,7 +5,7 @@
     <AssemblyTitle>单元测试扩展</AssemblyTitle>
     <Description>单元测试扩展库</Description>
     <Company>湖北登灏科技有限公司</Company>
-    <Copyright>©2020-2024 湖北登灏科技有限公司</Copyright>
+    <Copyright>©2020-2025 湖北登灏科技有限公司</Copyright>
     <VersionPrefix>4.0</VersionPrefix>
     <VersionSuffix>$([System.DateTime]::Now.ToString(`yyyy.MMdd`))</VersionSuffix>
     <Version>$(VersionPrefix).$(VersionSuffix)</Version>
@@ -41,7 +41,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="DH.NCore" Version="4.1.2024.1230-beta0114" />
+    <PackageReference Include="DH.NCore" Version="4.1.2025.103" />
     <PackageReference Include="xunit.extensibility.core" Version="2.9.2" />
   </ItemGroup>
 
