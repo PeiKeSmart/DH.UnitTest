@@ -36,7 +36,7 @@ public class PriorityOrderer : ITestCaseOrderer
             }
         }
 
-        XTrace.WriteLine("使用[PriorityOrderer/优先级顺序]测试: {0}, 用例：{1}", types.Join(), ts.Count);
+        XTrace.WriteLine("[PriorityOrderer.OrderTestCases]使用[PriorityOrderer/优先级顺序]测试: {0}, 用例：{1}", types.Join(), ts.Count);
 
         // 按优先级分组排序
         var dic = new SortedDictionary<Int32, List<T>>();
@@ -66,7 +66,7 @@ public class PriorityOrderer : ITestCaseOrderer
             foreach (var testCase in item.Value.OrderBy(x => x.TestMethod.Method.Name))
             {
                 var key = $"{item.Key}-{testCase.TestMethod.TestClass.Class.Name}-{testCase.TestMethod.Method.Name}";
-                XTrace.WriteLine(key);
+                XTrace.WriteLine("[PriorityOrderer.OrderTestCases]" + key);
 
                 yield return testCase;
             }

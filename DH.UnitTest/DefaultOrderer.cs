@@ -47,7 +47,7 @@ public class DefaultOrderer : ITestCaseOrderer
             }
         }
 
-        XTrace.WriteLine("使用[DefaultOrderer/默认方法顺序]测试: {0}, 用例：{1}", types.Join(), ts.Count);
+        XTrace.WriteLine("[DefaultOrderer.OrderTestCases]使用[DefaultOrderer/默认方法顺序]测试: {0}, 用例：{1}", types.Join(), ts.Count);
 
         var dic = new SortedDictionary<Int32, List<T>>();
 
@@ -72,7 +72,7 @@ public class DefaultOrderer : ITestCaseOrderer
                     var key = $"{item.TestMethod.TestClass.Class.Name}-{item.TestMethod.Method.Name}";
                     if (method == key)
                     {
-                        XTrace.WriteLine(key);
+                        XTrace.WriteLine("[DefaultOrderer.OrderTestCases]" + key);
 
                         yield return item;
                         ts.RemoveAt(i);
@@ -87,7 +87,7 @@ public class DefaultOrderer : ITestCaseOrderer
             foreach (var item in ts)
             {
                 var key = $"{item.TestMethod.TestClass.Class.Name}-{item.TestMethod.Method.Name}";
-                XTrace.WriteLine(key);
+                XTrace.WriteLine("[DefaultOrderer.OrderTestCases]" + key);
 
                 yield return item;
             }
@@ -101,7 +101,7 @@ public class DefaultOrderer : ITestCaseOrderer
             foreach (var testCase in item.Value.OrderBy(x => x.TestMethod.Method.Name))
             {
                 var key = $"{item.Key}-{testCase.TestMethod.TestClass.Class.Name}-{testCase.TestMethod.Method.Name}";
-                XTrace.WriteLine(key);
+                XTrace.WriteLine("[DefaultOrderer.OrderTestCases]" + key);
 
                 yield return testCase;
             }
