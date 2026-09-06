@@ -41,7 +41,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="DH.NCore" Version="4.25.2026.825-beta0516" />
+    <PackageReference Include="DH.NCore" Version="4.25.2026.906-beta0249" />
     <PackageReference Include="xunit.extensibility.core" Version="2.9.3" />
   </ItemGroup>
 
